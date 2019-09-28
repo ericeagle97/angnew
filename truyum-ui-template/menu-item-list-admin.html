@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet " href="style.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: orangered">
+            <i class="material-icons text-light">
+                restaurant_menu
+            </i>
+            <a class="navbar-brand" href="#"> truYum</a>
+            <button class="navbar-toggler " style="background-color: white" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav pull-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Menu Items <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Cart </a>
+                    </li>
+                    <li class="nav-item active">
+                        <div class="form-inline">
+                            <i class="material-icons text-white">
+                                person
+                            </i>
+                            <a class="nav-link text-white" href="#">John </a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Logout </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="jumbotron">
+
+        <h2 class="text-white">Find food</h2>
+
+        <div class="input-group md-form form-sm form-1 pl-0">
+            <div class="input-group-prepend">
+                <span class="input-group-text purple lighten-3" id="basic-text1"><i class="material-icons">
+                        free_breakfast </i></span>
+            </div>
+            <input class="form-control my-0 py-1" type="text" placeholder="Search food" aria-label="Search">
+        </div>
+
+    </div>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 px-2">
+                <div class="card ">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="Card image" style="width:100%">
+
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="card-title">Sandwich
+                            </div>
+                            <p class="text-danger float-right"> ₹99</p>
+                            </h5>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2">
+
+                                <span class="badge badge-success">Active</span></div>
+                            <div class="col-6">
+                                <p class="card-text">Main Course
+                            </div>
+                            <div class="col-4">
+                                <i class="material-icons float-right">local_shipping</i>
+                                <span class="badge badge-primary float-right">Free</span> </p>
+                            </div>
+                        </div>
+
+                        </br>
+
+
+                        <div class="row">
+                            <div class="col-7">
+                                <i class="material-icons float-left">access_time</i>
+                                <div class="card-text"> Launch </div>
+                                <div class="card-text">15/03/2017 </div>
+                            </div>
+                            <div class="col-5">
+                                <a href="#" class="btn float-right text-white"
+                                    style="background-color: orangered">Edit<i class="material-icons float-left">
+                                        edit</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-12 px-2">
+                <div class="card ">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1512152272829-e3139592d56f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                        alt="Card image" style="width:100%">
+
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="card-title">Burger
+                            </div>
+                            <p class="text-danger float-right"> ₹129</p>
+                            </h5>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2">
+
+                                <span class="badge badge-success">Active</span></div>
+                            <div class="col-6">
+                                <h6 class="card-text">Main Course</h6>
+                            </div>
+                        </div>
+
+                        </br>
+
+                        <div class="row">
+                            <div class="col-7">
+                                <i class="material-icons float-left">access_time</i>
+                                <div class="card-text"> Launch </div>
+                                <div class="card-text">23/12/2017 </div>
+                            </div>
+
+                            <div class="col-5">
+                                <a href="#" class="btn float-right text-white"
+                                    style="background-color: orangered">Edit<i class="material-icons float-left">
+                                        edit </i></a>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-12 px-2">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80"
+                        alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="card-title">Pizza
+                            </div>
+                            <p class="text-danger float-right"> ₹149</p>
+                            </h5>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2">
+
+                                <span class="badge badge-success">Active</span></div>
+                            <div class="col-6">
+                                <p class="card-text">Main Course</p>
+                            </div>
+                        </div>
+
+                        </br>
+                        <div class="row">
+
+
+                            <div class="col-7">
+                                <i class="material-icons float-left">access_time</i>
+                                <div class="card-text"> Launch </div>
+                                <div class="card-text">21/08/2017 </div>
+                            </div>
+                            <div class="col-5">
+                                <a href="#" class="btn float-right text-white"
+                                    style="background-color: orangered">Edit<i class="material-icons float-left">
+                                        edit</i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-12 px-2">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1526230427044-d092040d48dc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
+                        alt="Card image" style="width:100%">
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="card-title">French Fries
+                            </div>
+                            <p class="text-danger float-right"> ₹57</p>
+                            </h5>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2">
+
+                                <span class="badge badge-danger">Inactive</span></div>
+                            <div class="col-6">
+                                <p class="card-text">Starter
+                            </div>
+                            <div class="col-4">
+                                <i class="material-icons float-right">local_shipping</i>
+                                <span class="badge badge-primary float-right">Free</span> </p>
+                            </div>
+                        </div>
+
+                        </br>
+
+
+                        <div class="row">
+                            <div class="col-7">
+                                <i class="material-icons float-left">access_time</i>
+                                <div class="card-text"> Launch </div>
+                                <div class="card-text">02/07/2017 </div>
+                            </div>
+
+
+                            <div class="col-5">
+                                <a href="#" class="btn float-right text-white"
+                                    style="background-color: orangered">Edit<i class="material-icons float-left">
+                                        edit </i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="col-lg-3 col-md-6 col-sm-12 px-2 py-2">
+                <div class="card">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1564355808539-22fda35bed7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=730&q=80"
+                        alt="Card image" style="width:100%">
+
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="card-title">Chocolate Brownie
+                            </div>
+                            <p class="text-danger float-right"> ₹32</p>
+                            </h5>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-2">
+
+                                <span class="badge badge-success">Active</span></div>
+                            <div class="col-6">
+                                <p class="card-text">Desert
+                            </div>
+                            <div class="col-4">
+                                <i class="material-icons float-right">local_shipping</i>
+                                <span class="badge badge-primary float-right">Free</span> </p>
+                            </div>
+                        </div>
+
+                        </br>
+
+
+                        <div class="row">
+                            <div class="col-7">
+                                <i class="material-icons float-left">access_time</i>
+                                <div class="card-text"> Launch </div>
+                                <div class="card-text">02/11/2014 </div>
+                            </div>
+
+                            <div class="col-5">
+                                <a href="#" class="btn float-right text-white"
+                                    style="background-color: orangered">Edit<i class="material-icons float-left">
+                                        edit</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        Copyright 2019
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet " href="style.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: orangered">
+            <i class="material-icons text-light">
+                restaurant_menu
+            </i>
+            <a class="navbar-brand" href="#"> truYum</a>
+            <button class="navbar-toggler " style="background-color: white" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav pull-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Menu Items <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Cart </a>
+                    </li>
+                    <li class="nav-item active">
+                        <div class="form-inline">
+                            <i class="material-icons text-white">
+                                person
+                            </i>
+                            <a class="nav-link text-white" href="#">John </a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Logout </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 px-2">
+                <div class="card ">
+                    <img class="card-img-top"
+                        src="https://images.unsplash.com/photo-1528735602780-2552fd46c7af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt="Card image" style="width:100%">
+
+                    <div class="card-body">
+
+                        <div class="row">
+                            <div class="col-10">
+                                <h5 class="card-title">Sandwich
+                            </div>
+                            <p class="text-danger float-right"> ₹99</p>
+                            </h5>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-2">
+
+                                <span class="badge badge-success">Active</span></div>
+                            <div class="col-6">
+                                <p class="card-text">Main Course
+                            </div>
+                            <div class="col-4">
+                                <i class="material-icons float-right">local_shipping</i>
+                                <span class="badge badge-primary float-right">Free</span> </p>
+                            </div>
+                        </div>
+
+                        </br>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="alert alert-success">Item added successfully</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5">
+                                <i class="material-icons float-left">access_time</i>
+                                <div class="card-text"> Launch </div>
+                                <div class="card-text">15/03/2017 </div>
+                            </div>
+                            <div class="col-7">
+                                <a href="#" class="btn float-right text-white" style="background-color: orangered">Add
+                                    to Cart<i class="material-icons float-left">
+                                        add_shopping_cart</i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        Copyright 2019
+    </div>
+
+
+</body>
+
+</html>

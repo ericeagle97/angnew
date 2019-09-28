@@ -1,0 +1,30 @@
+/* include stylesheet for truYum */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: orangered;
+    color: white;
+    text-align: left;
+ }
+
+  .jumbotron{
+    background-image:url('https://images.unsplash.com/photo-1467453678174-768ec283a940?ixlib=rb-1.2.1&auto=format&fit=crop&w=728&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+   height: 100%;
+  }
+
+  .text-red{
+    color: red;
+  }
+
+  .text-grey{
+    color: grey;
+  }
+  .delete-icon{
+    padding-bottom: 5%;
+    padding-right: 20px;
+    color: grey;
+  }

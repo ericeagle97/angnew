@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand-sm navbar-dark" style="background-color: orangered">
+            <i class="material-icons text-light">
+                restaurant_menu
+            </i>
+            <a class="navbar-brand" href="#"> truYum</a>
+            <button class="navbar-toggler " style="background-color: white" type="button" data-toggle="collapse"
+                data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+                <ul class="navbar-nav mr-auto"></ul>
+                <ul class="navbar-nav pull-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Menu Items <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <div class="form-inline">
+                            <i class="material-icons text-white">
+                                person
+                            </i>
+                            <a class="nav-link text-white" href="#">John </a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Logout </a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="container col-lg-6 col-10 px-3 py-3">
+        <h4>Cart</h4>
+        <div class="alert alert-danger">
+            No items in cart. Use 'Add to Cart' option in menu item list.
+        </div>
+    </div>
+
+
+
+    <div class="footer">
+        Copyright 2019
+    </div>
+
+
+</body>
+
+</html>
