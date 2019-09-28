@@ -1,0 +1,33 @@
+<div class="container-fluid">
+  <h3 class="text-center my-4">Favorites</h3>
+  <div *ngIf="favorites.total==0">
+    <div class="alert alert-danger mt-5">
+      No items in cart. Use 'Add to Favorites' option in the <a routerLink="/">movies list.</a>
+    </div>
+  </div>
+  <div *ngIf="favorites.total!=0" class="card mx-auto my-4" id="cart_card">
+    <ul class="list-group list-group-flush">
+      <li *ngFor="let movie of favoritesList" class="list-group-item">
+        <div class="row">
+          <div class="col mr-auto text-muted">{{movie.title}}</div>
+          <div class="col text-right">
+            <a routerLink="/favorites" (click)="this.movieService.removeFromFavorites(movie.id)"><i
+                class="material-icons text-muted vertical">
+                delete_forever
+              </i>
+            </a>
+          </div>
+        </div>
+      </li>
+
+      <li class="list-group-item" id="total_cart">
+        <div class="row">
+          <div class="col mr-auto">No. of Favorites</div>
+          <div class="col text-right">
+            <p class="m-0" id="price_cart">{{favorites.total}}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

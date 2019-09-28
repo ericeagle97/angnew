@@ -7,7 +7,7 @@ import { User } from './User';
 export class UserService {
 
   userList: User[] = [
-    { firstName: "Amit", lastName: "Wani", userName: "mtwn105", password: "mtwn105admin" },
+    { firstName: "Akash", lastName: "Bansal", userName: "AkashB", password: "iamakash" },
     { firstName: "Admin", lastName: "Admin", userName: "admin", password: "adminadmin" },
   ];
 

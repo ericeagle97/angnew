@@ -1,8 +1,8 @@
-import { FoodService } from './../../food/food.service';
-import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder, FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { AuthService } from '../auth.service';
+import { MovieService } from 'src/app/movie/movie.service';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
 
   validCredentials = true;
 
-  constructor(private formBuilder: FormBuilder, private router: Router, private authService: AuthService, private foodService: FoodService) { }
+  constructor(private formBuilder: FormBuilder, private router: Router, private authService: AuthService, private movieService: MovieService) { }
 
   ngOnInit() {
     this.loginForm = this.formBuilder.group({

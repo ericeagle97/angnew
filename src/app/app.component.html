@@ -1,9 +1,9 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <nav class="navbar navbar-expand-sm navbar-dark">
   <i class="material-icons mr-3" style="color:white; font-size: 1.75em">
-    local_dining
+    movie
   </i>
-  <a class="navbar-brand" href="#">truYum</a>
+  <a class="navbar-brand" href="#">Movie Cruiser</a>
   <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
     aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
     <i class="material-icons">
@@ -14,15 +14,15 @@
     <ul class="navbar-nav mr-auto"></ul>
     <ul class="navbar-nav mt-lg-0">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="/">Menu Items </a>
+        <a class="nav-link" routerLink="/">Movies </a>
       </li>
       <li class="nav-item active" *ngIf="loggedIn()">
         <a class="nav-link" href="#"> <i class="material-icons vertical">
             person
           </i> {{this.authService.name}}</a>
       </li>
-      <li class="nav-item active" *ngIf="loggedIn() && !this.foodService.isAdmin">
-        <a class="nav-link" routerLink="/cart">Cart </a>
+      <li class="nav-item active" *ngIf="loggedIn() && !this.movieService.isAdmin">
+        <a class="nav-link" routerLink="/favorites">Favorites </a>
       </li>
       <li class="nav-item active" *ngIf="loggedIn()">
         <a class="nav-link" (click)="logout()" routerLink="/">Logout</a>
@@ -38,6 +38,7 @@
     </ul>
   </div>
 </nav>
+
 <router-outlet></router-outlet>
 
 <footer>

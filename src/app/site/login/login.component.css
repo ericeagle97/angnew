@@ -1,16 +1,16 @@
 nav {
-    background-color: #ff6347;
+    background-color: red;
   }
   #button {
-    background-color: #ff6347;
-    border: #ff6347;
+    background-color: red;
+    border: red;
     margin-top: 8px;
     font-size: 80%;
   }
   footer {
     padding-left: 8px;
     color: white;
-    background-color: #ff6347;
+    background-color: red;
   }
   
   .card-img-top {
@@ -22,11 +22,11 @@ nav {
     color: blue;
   }
   
-  #price {
-    color: #ff6347;
+  #boxOffice {
+    color: red;
     font-size: 130%;
   }
-  #category,
+  #genre,
   #launch {
     font-size: 80%;
     margin-top: 3px;
@@ -46,7 +46,7 @@ nav {
   }
   .jumbotron {
     padding: 10em inherit;
-    background-image: url("https://images.unsplash.com/photo-1507598641400-ec3536ba81bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaQiOjEyMDd9&auto=format&fit=crop&w=750&q=80");
+    background-image: url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/V7QIfdTcgikqxmxok/cinema-background_vzw7c2tqe__F0000.png");
     background-size: cover;
   }
   #searchtext {
@@ -88,6 +88,8 @@ nav {
       -webkit-column-count: 1;
       -moz-column-count: 1;
     }
+    
+    
   }
   
   @media (min-width: 768px) {
@@ -96,6 +98,8 @@ nav {
       -webkit-column-count: 2;
       -moz-column-count: 2;
     }
+    
+    
   }
   
   @media (min-width: 992px) {
@@ -104,9 +108,12 @@ nav {
       -webkit-column-count: 4;
       -moz-column-count: 4;
     }
+   
   }
   
-  #edit_menu_item_form{
+  
+  
+  #edit_menu_item_form,#edit_movie_form{
     margin: 10px;
   }
   

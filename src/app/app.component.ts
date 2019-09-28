@@ -1,6 +1,6 @@
-import { AuthService } from './site/auth.service';
+import { MovieService } from './movie/movie.service';
 import { Component } from '@angular/core';
-import { FoodService } from './food/food.service';
+import { AuthService } from './site/auth.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,10 +9,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
   isLoggedIn = false;
 
-  constructor(private authService: AuthService, public router: Router, private foodService: FoodService) {
+  constructor(private authService: AuthService, public router: Router, private movieService: MovieService) {
 
   }
 
@@ -27,15 +26,11 @@ export class AppComponent {
     }
   }
   clickOnAddCart() {
-    this.foodService.clickedOnAdd = false;
-    this.foodService.addedToCart = false;
+    this.movieService.clickedOnAdd = false;
+    this.movieService.addedToFavorites = false;
   }
 
   logout() {
     this.authService.logout();
   }
-
-
-
-
 }

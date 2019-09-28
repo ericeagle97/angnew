@@ -1,21 +1,18 @@
 import { AuthGuardService } from './auth-guard.service';
-import { LoginComponent } from './site/login/login.component';
 import { SignupComponent } from './site/signup/signup.component';
-import { FoodSearchComponent } from './food/search/search.component';
-import { FoodMenuComponent } from './food/menu/menu.component';
-import { FoodItemComponent } from './food/item-info/item-info.component';
-import { FoodItemEditComponent } from './food/item-edit/item-edit.component';
-import { CartComponent } from './shopping/cart/cart.component';
-import { AppComponent } from './app.component';
+import { MovieEditComponent } from './movie/movie-edit/movie-edit.component';
+import { MovieSearchComponent } from './movie/search/search.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { LoginComponent } from './site/login/login.component';
+import { FavoritesComponent } from './favorite/favorites/favorites.component';
 
 const routes: Routes = [
-  { path: '', component: FoodSearchComponent },
-  { path: 'cart', component: CartComponent, canActivate: [AuthGuardService] },
+  { path: '', component: MovieSearchComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'edit/:id', component: FoodItemEditComponent },
+  { path: 'favorites', component: FavoritesComponent,  },
+  { path: 'edit/:id', component: MovieEditComponent },
 ];
 
 @NgModule({

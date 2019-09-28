@@ -1,4 +1,4 @@
-import { FoodService } from './../food/food.service';
+import { MovieService } from './../movie/movie.service';
 import { Injectable } from '@angular/core';
 import { User } from './User';
 import { UserService } from './user.service';
@@ -14,7 +14,7 @@ export class AuthService {
   loggedIn: boolean = false;
   name: string;
   validCredentials: boolean = false;
-  constructor(private userService: UserService, private foodService: FoodService, public router: Router) { }
+  constructor(private userService: UserService, private movieService: MovieService, public router: Router) { }
 
   authenticateUser(username: string, password: string): boolean {
     let userList = this.userService.getUsers();
@@ -22,11 +22,11 @@ export class AuthService {
       if (user.userName == username && user.password == password) {
         this.loggedInUser = user;
         if (user.userName == 'admin' && user.password == 'adminadmin') {
-          this.foodService.isAdmin = true;
+          this.movieService.isAdmin = true;
         }
         this.validCredentials = true;
         this.loggedIn = true;
-        this.foodService.isLoggedIn = true;
+        this.movieService.isLoggedIn = true;
         this.name = this.userService.getUsers().find((u) => user.userName == u.userName).firstName;
         this.router.navigate(['']);
         return true;
@@ -38,11 +38,11 @@ export class AuthService {
 
   logout() {
     this.loggedInUser = null;
-    this.foodService.isAdmin = false;
+    this.movieService.isAdmin = false;
     this.loggedIn = false;
-    this.foodService.isLoggedIn = false;
-    this.foodService.clickedOnAdd = false;
-    this.foodService.addedToCart = false;
+    this.movieService.isLoggedIn = false;
+    this.movieService.clickedOnAdd = false;
+    this.movieService.addedToFavorites = false;
     this.router.navigate(['login']);
   }
 }
